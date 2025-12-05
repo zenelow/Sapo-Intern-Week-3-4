@@ -32,5 +32,7 @@ import java.util.Scanner;
 
         result = weight / (height * height);
         System.out.println("Your BMI is: " + result);
+
+        scanner.close();
     }
 }
