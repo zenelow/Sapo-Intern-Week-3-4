@@ -32,6 +32,13 @@ import java.util.Scanner;
 
         result = weight / (height * height);
         System.out.println("Your BMI is: " + result);
+        if (result < 18.5) {
+            System.out.println("You are underweight");
+        } else if (18.5 <= result && result <= 24.9) {
+            System.out.println("You have healthy weight");
+        } else {
+            System.out.println("You are overweight");
+        }
 
         scanner.close();
     }
